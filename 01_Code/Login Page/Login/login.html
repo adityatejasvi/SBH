@@ -5,16 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="login.css">
+    <form action="login.php" method="post"></form>
     <title>Login Page</title>
+
+    <script>
+      function redirectToDashboard() {
+          // Change the window location to the desired URL
+          window.location.href = "home.html";
+      }
+  </script>
     
 </head>
 <body>
-    <form action="action_page.php" method="post">
+    <form action="login.php" method="post"> <!-- !!!!!Connect the php file!!!!! -->
         <div class="imgcontainer">
           <img src="Image/loginAvatar.png" alt="Avatar" width="200">
    
         </div>
-      
+        
         <div class="container">
         <!--UserName-->
           <label for="uname"><b>Username</b></label>
@@ -37,5 +45,9 @@
           <span class="psw">Forgot <a href="#">password?</a></span>
         </div>
       </form>
+      <!--HOME PAGE-->
+
+
+       <!--HOME PAGE-->
 </body>
 </html>
